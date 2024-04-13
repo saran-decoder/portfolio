@@ -23,12 +23,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap" rel="stylesheet">
 
-        <!-- This is Mail Sender Header -->
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <!-- This is Mail Sender JS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-        <script type="text/javascript">
-            emailjs.init('ErTImlEZaGOVJ_z6n')
-        </script>
+    <script type="text/javascript">
+        emailjs.init('ErTImlEZaGOVJ_z6n')
+    </script>
 
     </head>
 
@@ -148,7 +148,7 @@
                             <div class="card-icon">
                                 <img src="./assets/images/icons/stats-card_icon-1.png" alt="Badge icon">
                             </div>
-                            <h2 class="h2 card-title">3+ <strong>Years of Experience</strong></h2>
+                            <h2 class="h2 card-title">3+ <strong>Years of learning Experience</strong></h2>
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </a>
                     </li>
@@ -157,7 +157,7 @@
                             <div class="card-icon">
                                 <img src="./assets/images/icons/stats-card_icon-2.png" alt="Checkmark icon">
                             </div>
-                            <h2 class="h2 card-title">25+ <strong>Completed Projects</strong></h2>
+                            <h2 class="h2 card-title">20+ <strong>Completed Projects</strong></h2>
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </a>
                     </li>
@@ -166,7 +166,7 @@
                             <div class="card-icon">
                                 <img src="./assets/images/icons/stats-card_icon-3.png" alt="Peoples rating icon">
                             </div>
-                            <h2 class="h2 card-title">23+ <strong>Happy Clients</strong></h2>
+                            <h2 class="h2 card-title">20+ <strong>Happy Clients</strong></h2>
                             <ion-icon name="chevron-forward-outline"></ion-icon>
                         </a>
                     </li>
@@ -182,7 +182,7 @@
                 <div class="about-content section-content">
                     <p class="section-subtitle">About me</p>
                     <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
-                    <p class="section-text">Hi! I am Saran, I am a developer I interested in creating clean web applications with intuitive functionality. I enjoy the process of turning ideas into reality using creative solutions. I am always interested in learning new skills, tools and concepts. I have worked on various solo full stack projects and I started learning programming at the age of 15.</p>
+                    <p class="section-text">Hi! My name is Saran, and I work as a developer. I enjoy designing clean web applications with intuitive features. I appreciate the process of making ideas a reality through creative solutions. I am always eager to learn new skills, techniques, and concepts. I've worked on several single full stack projects and began learning programming at the age of 15.</p>
                     <div class="btn-group">
                         <a href="./assets/files/Resume.pdf" title="Saran Resume" class="btn btn-primary">Download CV</a>
                     </div>
@@ -399,8 +399,8 @@
             <section class="contact" id="contact">
                 <div class="contact-content section-content">
                     <p class="section-subtitle">Contact</p>
-                    <h2 class="h3 section-title">Have You Any Project? Please Send a Message</h2>
-                    <p class="section-text">Contact me and let me know how I can help you. Fill out the form and I will contact you shortly.</p>
+                    <h2 class="h3 section-title">Do You Have Any Projects? Please Send A Message</h2>
+                    <p class="section-text">Please contact me and tell me how I can help you. Please fill out the form, and I will contact you shortly.</p>
                     <ul class="contact-list">
                         <li class="contact-list-item">
                             <div class="contact-item-icon">
@@ -429,15 +429,15 @@
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/saran_decoder/?r=nametag" class="contact-social-link">
-                                        <div class="tooltip">Instagram</div>
-                                        <ion-icon name="logo-instagram"></ion-icon>
-                                    </a>
-                                </li>
-                                <li>
                                     <a href="https://www.linkedin.com/in/saran-b-875a27208" class="contact-social-link">
                                         <div class="tooltip">Linkedin</div>
                                         <ion-icon name="logo-linkedin"></ion-icon>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.instagram.com/saran_decoder/?r=nametag" class="contact-social-link">
+                                        <div class="tooltip">Instagram</div>
+                                        <ion-icon name="logo-instagram"></ion-icon>
                                     </a>
                                 </li>
                             </ul>
@@ -478,31 +478,28 @@
                 </form>
 
                 <!-- Send Mail JS Printing PHP Script -->
-                <!-- <?php
-                    echo(" -->
-                    <script>
-                        const btn = document.getElementById('button');
+                <script>
+                    const btn = document.getElementById('button');
 
-                        document.getElementById('form').addEventListener('submit', function(event) {
-                            event.preventDefault();
+                    document.getElementById('form').addEventListener('submit', function(event) {
+                        event.preventDefault();
 
-                            btn.value = 'Sending...';
+                        btn.value = 'Sending...';
 
-                            const serviceID = 'default_service';
-                            const templateID = 'template_v9ifbto';
+                        const serviceID = 'default_service';
+                        const templateID = 'template_multi';
 
-                            emailjs.sendForm(serviceID, templateID, this)
-                            .then(() => {
-                                btn.value = location.reload();
-                                alert('Email Send Successfully!');
-                            }, (err) => {
-                                btn.value = 'Send Email';
-                                alert(JSON.stringify(err));
-                            });
+                        emailjs.sendForm(serviceID, templateID, this)
+                        .then(() => {
+                            btn.value = location.reload();
+                            alert('Email Send Successfully!');
+                        }, (err) => {
+                            btn.value = 'Send Email';
+                            alert(JSON.stringify(err));
                         });
-                    </script>
-                    <!-- ");
-                ?> -->
+                    });
+                </script>
+
             </section>
 
         </main>
@@ -511,7 +508,7 @@
         <footer class="footer">
             <div class="container">
                 <p class="h1 logo"><a href="#">SARAN</a></p>
-                <p class="copyright">&copy; 2023 <a href="#">My Portfolio</a> All Rights Reserved</p>
+                <p class="copyright">&copy; 2024 <a href="#">My Portfolio</a> All Rights Reserved</p>
             </div>
         </footer>
 
