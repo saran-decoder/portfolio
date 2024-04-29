@@ -6,17 +6,23 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="author" content="Saran">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-        <meta name="description" content="the page description">
-        <link rel="canonical" href="https://saran.selfmade.one/">
+        <meta name="author" content="Saran">
+        <meta name="description" content="Hi! I'm Saran, a freelance website developer and full-stack engineer. With a passion for clean design and intuitive features, I turn ideas into reality through creative solutions. Starting my programming journey at 15, I'm dedicated to continuous learning and mastering new skills and techniques. Explore my portfolio and get in touch to collaborate on your next project.">
+        <meta name="keywords" content="Saran, website developer, freelance developer, full stack engineer, clean web design, intuitive features, creative solutions, programming, full stack projects, freelancer, web development, portfolio">
 
-        <title>Saran</title>
+        <!-- Page Title -->
+        <title>Saran - Web Developer</title>
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://saran.selfmade.one/">
 
         <!-- F A V I C O N -->
         <link rel="shortcut icon" href="./assets/images/icon.png" type="image/svg+xml">
 
         <!-- CUSTOM CSS LINK -->
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="./assets/css/load.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/loader.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/plugins.css">
+        <link rel="stylesheet" type="text/css" href="./assets/css/main.css">
 
         <!-- GOOGLE FONT LINK -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,506 +30,826 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:wght@400;700&family=Saira+Stencil+One&display=swap" rel="stylesheet">
 
         <!-- This is Mail Sender JS -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <script type="text/javascript">
-        emailjs.init('ErTImlEZaGOVJ_z6n')
-    </script>
+        <script type="text/javascript">
+            emailjs.init('ErTImlEZaGOVJ_z6n')
+        </script>
 
     </head>
 
-    <body id="top" class="dark_theme" data-body>
+    <body>
 
-        <!-- H E A D E R -->
-        <header class="header" data-header>
-            <div class="container">
-                <h1 class="h1 logo">
-                    <a href="#">Saran</a>
-                </h1>
-                <div class="navbar-actions">
-                    <button class="theme-btn" aria-label="Change Theme" title="Change Theme" data-theme-btn>
-                        <span class="icon"></span>
-                    </button>
-                </div>
-                <button class="nav-toggle-btn" aria-label="Toggle Menu" title="Toggle Menu" data-nav-toggle-btn>
-                    <span class="one"></span>
-                    <span class="two"></span>
-                    <span class="three"></span>
-                </button>
-                <nav class="navbar" data-navbar>
-                    <ul class="navbar-list">
-                        <li>
-                            <a href="#home" class="navbar-link">Home</a>
+        <!-- Loader Start -->
+        <div id="loader" class="loader">
+        <div id="loaderContent" class="loader__content">
+            <div class="loader__shadow"></div>
+            <div class="loader__box"></div>
+        </div>
+        </div>
+        <!-- Loader End -->
+
+        <!-- Header Start -->
+        <header id="header" class="header d-flex justify-content-between">
+
+            <!-- Navigation Menu Start -->
+            <div class="header__navigation">
+                <nav id="menu" class="menu">
+                    <ul class="menu__list d-flex justify-content-start">
+                        <li class="menu__item">
+                            <a class="menu__link btn" href="#home">
+                                <span class="menu__caption">Home</span>
+                                <i class="ph-bold ph-house-simple"></i>
+                            </a>
                         </li>
-
-                        <li>
-                            <a href="#about" class="navbar-link">About</a>
+                        <li class="menu__item">
+                            <a class="menu__link btn" href="#about">
+                                <span class="menu__caption">About Me</span>
+                                <i class="ph-bold ph-user"></i>
+                            </a>
                         </li>
-
-                        <li>
-                            <a href="#skills" class="navbar-link">Skills</a>
+                        <li class="menu__item">
+                            <a class="menu__link btn" href="#portfolio">
+                                <span class="menu__caption">Projects</span>
+                                <i class="ph-bold ph-squares-four"></i>
+                            </a>
                         </li>
-
-                        <li>
-                            <a href="#contact" class="navbar-link">Contact</a>
+                        <li class="menu__item">
+                            <a class="menu__link btn" href="#qualification">
+                                <span class="menu__caption">Education</span>
+                                <i class="ph-bold ph-article"></i>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a class="menu__link btn" href="#contact">
+                                <span class="menu__caption">Contact</span>
+                                <i class="ph-bold ph-envelope"></i>
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </div>
+            <!-- Navigation Menu End -->
+
+            <!-- Header Controls Start -->
+            <div class="header__controls d-flex justify-content-end">
+                <button id="color-switcher" class="color-switcher header__switcher btn" type="button" role="switch" aria-label="light/dark mode" aria-checked="true"></button>
+            </div>
+            <!-- Header Controls End -->
+
         </header>
+        <!-- Header End -->
 
+        <!-- SVG Background Start -->
+        <div id="svgBackground" class="svg-background loaded">
+            <!-- top svg item -->
+            <div class="background__svg01" data-speed="0.8" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="1000px" height="1000px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+                    <style type="text/css">
+                       .bg01{fill:url("#color-gradient");}
+                    </style>
+                    <radialGradient id="color-gradient" cx="418.5665" cy="225.9685" r="499.9326" fx="866.8251" fy="4.6162" gradientTransform="matrix(-0.6935 0.7207 -0.7207 -0.6935 953.1126 355.0528)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" style="stop-color:#CEC4EF"></stop>
+                        <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0"></stop>
+                    </radialGradient>
+                    <circle class="bg01" cx="500" cy="500" r="500"></circle>
+                </svg>
+            </div>
+            <!-- bottom svg item -->
+            <div class="background__svg02" data-speed="0.4" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="429.6px" height="429.6px" viewBox="0 0 429.6 429.6" style="enable-background:new 0 0 429.6 429.6;" xml:space="preserve">
+                    <style type="text/css">
+                        .bg02{fill:url("#color-gradient-2");}
+                    </style>
+                    <g id="Layer_1-2">
+                        <radialGradient id="color-gradient-2" cx="2213.9312" cy="-11537.4219" r="214.85" fx="2393.6191" fy="-11419.6494" gradientTransform="matrix(1.902285e-02 0.9998 0.9998 -1.954636e-02 11706.5303 -2223.4016)" gradientUnits="userSpaceOnUse">
+                            <stop offset="0" style="stop-color:#CEC4EF"></stop>
+                            <stop offset="1" style="stop-color:#CEC4EF;stop-opacity:0"></stop>
+                        </radialGradient>
+                        <path class="bg02" d="M63,63C146.9-21,282.9-21,366.8,62.9s83.8,219.9-0.1,303.8s-219.9,83.9-303.8,0.1S-20.9,146.9,63,63z"></path>
+                    </g>
+                </svg>
+            </div>
+          </div>
+        <!-- SVG Background End -->
 
-        <main class="container">
+        <!-- Avatar Side Block Start -->
+        <div id="avatar" class="avatar">
+            <div class="avatar__container d-flex flex-column justify-content-lg-between">
+                <div class="avatar__block">
+                    <h5>Saran B</h5>
+                </div>
+                <!-- image and logo -->
+                <div class="avatar__block">
+                    <div class="avatar__image">
+                        <img src="./assets/images/avatar.png" alt="Saran - Personal Portfolio Avatar">
+                    </div>
+                </div>
+                <!-- data caption #1 -->
+                <div class="avatar__block">
+                    <h6>
+                        <small class="top">Specialization:</small>
+                        Web Developer with expertise in Web Development
+                    </h6>
+                </div>
+                <!-- data caption #2 -->
+                <div class="avatar__block">
+                    <h6>
+                        <small class="top">Work's:</small>
+                        Fresher
+                    </h6>
+                </div>
 
-            <!-- P R E L O A D E R -->
-            <div id="loader" class="preloader">
-                <div class="boxes">
-                    <div class="box">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="box">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="box">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                    <div class="box">
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <!-- socials and CTA button -->
+                <div class="avatar__block">
+                    <div class="avatar__socials">
+                        <ul class="socials-square d-flex justify-content-between">
+                            <li class="socials-square__item">
+                                <a class="socials-square__link btn" href="https://www.linkedin.com/in/saran-b-875a27208" target="_blank"><i class="ph-bold ph-linkedin-logo"></i></a>
+                            </li>
+                            <li class="socials-square__item">
+                                <a class="socials-square__link btn" href="https://github.com/saran-decoder" target="_blank"><i class="ph-bold ph-github-logo"></i></a>
+                            </li>
+                            <li class="socials-square__item">
+                                <a class="socials-square__link btn" href="https://www.instagram.com/saran_decoder/?r=nametag" target="_blank"><i class="ph-bold ph-instagram-logo"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
+        </div>
+        <!-- Avatar Side Block End -->
 
-            <!-- P O R T F O L I O -->
-            <section class="portfolio" id="home">
-                <div class="portfolio-banner">
-                    <img src="./assets/images/portfolio-banner-sm.png" alt="happy expression" class="w-100" style="border-radius: 25rem;">
-                </div>
-                <div class="portfolio-content">
-                    <h2 class="h2 portfolio-title">Hey There, I’am Saran</h2>
-                    <p class="portfolio-title-3">Full Stack Web Engineer</p>
-                </div>
-                <ul class="portfolio-social-list">
-                    <li>
-                        <a href="https://github.com/saran-decoder" class="portfolio-social-link">
-                            <ion-icon name="logo-github"></ion-icon>
-                            <div class="tooltip">Github</div>
+        <!-- Page Content Start -->
+        <div id="content" class="content">
+            <div class="content__wrapper">
+
+                <!-- Intro Section Start -->
+                <section id="home" class="main intro">
+
+                    <!-- Headline Start -->
+                    <div id="headline" class="headline d-flex align-items-start flex-column">
+                        <p class="headline__subtitle animate-headline">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                            </svg>
+                            <span>Let's meet!</span>
+                        </p>
+                        <h1 class="headline__title animate-headline">I'm Saran<br>Full stack web developer.</h1>
+                        <div class="headline__btnholder d-flex flex-column flex-sm-row">
+                            <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent-mobile animate-headline" href="#portfolio">
+                                <span class="btn-caption">My Works</span>
+                                <i class="ph-bold ph-squares-four"></i>
+                            </a>
+                            <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="./assets/files/Resume.pdf" title="Saran Resume" target="Resume">
+                                <span class="btn-caption">Download CV</span>
+                                <i class="ph-bold ph-download-simple"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Headline End -->
+
+                    <!-- Scroll Button Start -->
+                    <div class="rotating-btn">
+                        <a href="#about" class="rotating-btn__link slide-down">
+                        <!-- SVG rotating text -->
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;box-shadow:rgb(228, 184, 191) 0px 0px 0px 2px;border-radius:8rem;" xml:space="preserve" class="animate-rotation" data-value="360">
+                            <defs>
+                                <path id="textPath" d="M110,59.5c0,27.6-22.4,50-50,50s-50-22.4-50-50s22.4-50,50-50S110,31.9,110,59.5z"></path>
+                            </defs>
+                            <g>
+                                <use xlink:href="#textPath" fill="none"></use>
+                            </g>
+                        </svg>
+                        <!-- arrow icon -->
+                        <i class="ph-bold ph-arrow-down"></i>
                         </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/saran-b-875a27208" class="portfolio-social-link">
-                            <ion-icon name="logo-linkedin"></ion-icon>
-                            <div class="tooltip">Linkedin</div>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/saran_decoder/?r=nametag" class="portfolio-social-link">
-                            <ion-icon name="logo-instagram"></ion-icon>
-                            <div class="tooltip">Instagram</div>
-                        </a>
-                    </li>
-                </ul>
-                <a href="#stats" class="scroll-down">
-                    <ion-icon name="arrow-forward-outline"></ion-icon>
-                </a>
-            </section>
+                    </div>
+                    <!-- Scroll Button End -->
 
+                </section>
+                <!-- Intro Section End -->
 
-            <!-- S T A T S -->
-            <section class="stats" id="stats">
-                <ul class="stats-list">
-                    <li>
-                        <a href="#" class="stats-card">
-                            <div class="card-icon">
-                                <img src="./assets/images/icons/stats-card_icon-1.png" alt="Badge icon">
+                <!-- About Section Start -->
+                <section id="about" class="inner about">
+
+                    <!-- Content Block - H2 Section Title Start -->
+                    <div class="content__block section-grid-title">
+                        <p class="h2__subtitle animate-in-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                            </svg>
+                            <span>About Me</span>
+                        </p>
+                        <h2 class="h2__title animate-in-up">Hey This is for Me!</h2>
+                    </div>
+                    <!-- Content Block - H2 Section Title End -->
+
+                    <!-- Content Block - Achievements Start -->
+                    <div class="content__block grid-block">
+                        <div class="achievements d-flex flex-column flex-md-row align-items-md-stretch">
+                            <!-- achievements single item -->
+                            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                                <div class="achievements__card">
+                                    <p class="achievements__number">20+</p>
+                                    <p class="achievements__descr">Happy Clients</p>
+                                </div>
                             </div>
-                            <h2 class="h2 card-title">3+ <strong>Years of learning Experience</strong></h2>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="stats-card">
-                            <div class="card-icon">
-                                <img src="./assets/images/icons/stats-card_icon-2.png" alt="Checkmark icon">
+                            <!-- achievements single item -->
+                            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                                <div class="achievements__card">
+                                    <p class="achievements__number">2+</p>
+                                    <p class="achievements__descr">Years of Learing Experience</p>
+                                </div>
                             </div>
-                            <h2 class="h2 card-title">20+ <strong>Completed Projects</strong></h2>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#" class="stats-card">
-                            <div class="card-icon">
-                                <img src="./assets/images/icons/stats-card_icon-3.png" alt="Peoples rating icon">
+                            <!-- achievements single item -->
+                            <div class="achievements__item d-flex flex-column grid-item animate-card-3">
+                                <div class="achievements__card">
+                                    <p class="achievements__number">20+</p>
+                                    <p class="achievements__descr">Completed Projects</p>
+                                </div>
                             </div>
-                            <h2 class="h2 card-title">20+ <strong>Happy Clients</strong></h2>
-                            <ion-icon name="chevron-forward-outline"></ion-icon>
-                        </a>
-                    </li>
-                </ul>
-            </section>
-
-
-            <!-- A B O U T -->
-            <section class="about" id="about">
-                <div class="about-banner">
-                    <img src="./assets/images/about-banner.png" alt="Thinking expression" class="w-100" style="border-radius: 2rem;">
-                </div>
-                <div class="about-content section-content">
-                    <p class="section-subtitle">About me</p>
-                    <h2 class="h3 section-title">Need a Creative Product? I can Help You!</h2>
-                    <p class="section-text">Hi! My name is Saran, and I work as a developer. I enjoy designing clean web applications with intuitive features. I appreciate the process of making ideas a reality through creative solutions. I am always eager to learn new skills, techniques, and concepts. I've worked on several single full stack projects and began learning programming at the age of 15.</p>
-                    <div class="btn-group">
-                        <a href="./assets/files/Resume.pdf" title="Saran Resume" class="btn btn-primary">Download CV</a>
-                    </div>
-                </div>
-            </section>
-
-
-            <!-- S K I L L S -->
-            <section class="skills" id="skills">
-
-                <div class="skills-content section-content">
-
-                <p class="section-subtitle">My skills</p>
-
-                <h2 class="h3 section-title">What My Programming Skills Included?</h2>
-
-                <p class="section-text">With these technologies I create responsive user website with minimal effort and time, These technologies are used in the current market situation.</p>
-
-                <div class="skills-toggle" data-toggle-box>
-                    <button class="toggle-btn active" data-toggle-btn>Skills</button>
-
-                    <button class="toggle-btn" data-toggle-btn>Tools</button>
-                </div>
-
-                </div>
-
-                <div class="skills-box" data-skills-box>
-
-                <ul class="skills-list">
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">HTML5</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/html5.png" alt="HTML5 logo">
                         </div>
                     </div>
-                    </li>
+                    <!-- Content Block - Achievements End -->
 
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">CSS3</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/css3.png" alt="CSS3 logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">JavaScript</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/javascript.png" alt="JavaScript logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">jQuery</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/jquery.png" alt="jQuery logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Bootstrap</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/bootstrap.png" alt="Bootstrap logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">React</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/react.png" alt="React logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">PHP</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/php.png" alt="PHP logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">MySQL</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/mysql.png" alt="MySQL logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Rest API</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/api.png" alt="Rest API logo">
-                        </div>
-                    </div>
-                    </li>
-
-                </ul>
-
-
-                <ul class="tools-list">
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Chrome DevTool</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/chromedevtool.png" alt="Chrome DevTool logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Postman</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/postman.png" alt="Postman logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Github</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/github.png" alt="Github logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Git</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/git.png" alt="Git logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Npm</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/npm.png" alt="Npm logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Linux Terminal</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/terminal.png" alt="Terminal logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">VS Code</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/vs-code.png" alt="VS Code logo">
-                        </div>
-                    </div>
-                    </li>
-
-                    <li>
-                    <div class="skill-card">
-                        <div class="tooltip">Docker</div>
-
-                        <div class="card-icon">
-                        <img src="./assets/images/icons/docker.png" alt="Docker logo">
-                        </div>
-                    </div>
-                    </li>
-
-                </ul>
-
-                </div>
-
-            </section>
-
-
-            <!-- C O N T A C T -->
-            <section class="contact" id="contact">
-                <div class="contact-content section-content">
-                    <p class="section-subtitle">Contact</p>
-                    <h2 class="h3 section-title">Do You Have Any Projects? Please Send A Message</h2>
-                    <p class="section-text">Please contact me and tell me how I can help you. Please fill out the form, and I will contact you shortly.</p>
-                    <ul class="contact-list">
-                        <li class="contact-list-item">
-                            <div class="contact-item-icon">
-                                <ion-icon name="location-outline"></ion-icon>
+                    <!-- Content Block - About Me Data Start -->
+                    <div class="content__block grid-block block-large">
+                        <div class="container-fluid p-0">
+                            <div class="row g-0 justify-content-between">
+                                
+                                <!-- About Me Description Start -->
+                                <div class="col-12 col-xl-8 grid-item about-descr">
+                                    <p class="about-descr__text animate-in-up">
+                                        Hi! My name is <a href="#about" class="text-link">Saran</a>, and I work as a developer. I enjoy designing clean web applications with intuitive features. I appreciate the process of making ideas a reality through creative solutions. I am always eager to learn new skills, techniques, and concepts. I've worked on several single full stack projects and began learning programming at the age of 15.
+                                    </p>
+                                    <div class="btn-group about-descr__btnholder animate-in-up">
+                                        <a class="btn mobile-vertical btn-default btn-hover btn-hover-accent" href="./assets/files/Resume.pdf" title="Saran Resume">
+                                            <span class="btn-caption">Download CV</span>
+                                            <i class="ph-bold ph-download-simple"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!-- About Me Description End -->
+                    
+                                <!-- About Me Information Start -->
+                                <div class="col-12 col-xl-4 grid-item about-info">
+                                    <div class="about-info__item animate-in-up">
+                                        <h6>
+                                            <small class="top">Name</small>
+                                            Saran
+                                        </h6>
+                                    </div>
+                                    <!-- <div class="about-info__item animate-in-up">
+                                        <h6>
+                                            <small class="top">Phone</small>
+                                            <a class="text-link-bold" href="tel:+91">+91</a>
+                                        </h6>
+                                    </div> -->
+                                    <div class="about-info__item animate-in-up">
+                                        <h6>
+                                            <small class="top">Email</small>
+                                            <a class="text-link-bold" href="mailto:saran.decoder@gmail.com">saran.decoder@gmail.com</a>
+                                        </h6>
+                                    </div>
+                                    <div class="about-info__item animate-in-up">
+                                        <h6>
+                                            <small class="top">Location</small>
+                                            <a class="text-link-bold" href="#about" target="_blank">Tiruvannamalai, Tamil Nadu</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <!-- About Me Information End -->
+                    
                             </div>
-                            <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Address:</h3>
-                                <address class="contact-info">Tiruvannamalai, Tamil Nadu - 606 604</address>
-                            </div>
-                        </li>
-                        <li class="contact-list-item">
-                            <div class="contact-item-icon">
-                                <ion-icon name="mail-outline"></ion-icon>
-                            </div>
-                            <div class="wrapper">
-                                <h3 class="h4 contact-item-title">Email:</h3>
-                                <a href="mailto:zara.service.24@gmail.com" class="contact-info">zara.service.24@gmail.com</a>
-                            </div>
-                        </li>
-                        <li>
-                            <ul class="contac-social-list">
-                                <li>
-                                    <a href="https://github.com/saran-decoder" class="contact-social-link">
-                                        <div class="tooltip">Github</div>
-                                        <ion-icon name="logo-github"></ion-icon>
+                        </div>
+                    </div>
+                    <!-- Content Block - About Me Data End -->
+
+                </section>
+                <!-- About Section End -->
+
+                <!-- Portfolio Section Start -->
+                <section id="portfolio" class="inner inner-first portfolio">
+
+                    <!-- Content Block - H2 Section Title Start -->
+                    <div class="content__block section-grid-title">
+                        <p class="h2__subtitle animate-in-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                            </svg>
+                            <span>Projects</span>
+                        </p>
+                        <h2 class="h2__title animate-in-up">Check out my projects</h2>
+                    </div>
+                    <!-- Content Block - H2 Section Title End -->
+
+                    <!-- Content Block - Works Gallery Start -->
+                    <div class="content__block grid-block">
+                        <div class="container-fluid px-0 inner__gallery">
+                            <div class="row gx-0 my-gallery" itemscope="" itemtype="">
+                    
+                                <!-- Works Gallery Single Item Start -->
+                                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope="" itemtype="">
+                                    <a href="./assets/images/proimg/pg.png" data-image="./assets/images/proimg/pg.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                                        <img src="./assets/images/proimg/pg.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/in/saran-b-875a27208" class="contact-social-link">
-                                        <div class="tooltip">Linkedin</div>
-                                        <ion-icon name="logo-linkedin"></ion-icon>
+                                    <figcaption class="gallery__descr" itemprop="caption description">
+                                        <div class="card__tags d-flex flex-wrap">
+                                            <span class="rounded-tag opposite">Photogram</span>
+                                        </div>
+                                        <p class="small">Visit to explore now! <a href="https://photo.selfmade.city/">Link</a> 🚀 Exciting news! i am has created a dynamic platform that redefines social media interaction. Our frontend is developed using HTML, CSS, JS, and Jquery with Bootstrap, ensuring an engaging and responsive user interface. On the backend, PHP orchestrates server-side operations, and MySQL serves as the secure repository for our platform's data.</p>
+                                    </figcaption>
+                                </figure>
+                                <!-- Works Gallery Single Item End -->
+                    
+                                <!-- Works Gallery Single Item Start -->
+                                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope="" itemtype="">
+                                    <a href="./assets/images/proimg/rs_crud.png" data-image="./assets/images/proimg/rs_crud.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                                        <img src="./assets/images/proimg/rs_crud.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                                     </a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/saran_decoder/?r=nametag" class="contact-social-link">
-                                        <div class="tooltip">Instagram</div>
-                                        <ion-icon name="logo-instagram"></ion-icon>
+                                    <figcaption class="gallery__descr opposite" itemprop="caption description">
+                                        <div class="card__tags d-flex flex-wrap">
+                                            <span class="rounded-tag">ReactJS CRUD</span>
+                                        </div>
+                                        <p class="small">🚀 Just creating a new React JS CRUD user info item form and using the React Hook! 🎉 Check out my GitHub repository <a href="https://github.com/saran-decoder/React-Table-Project/">Link</a> to see my work and how I'm growing my skills. I'm excited to continue building my MERN stack skills and contribute to more web development projects.</p>
+                                    </figcaption>
+                                </figure>
+                                <!-- Works Gallery Single Item End -->
+
+                                <!-- Works Gallery Single Item Start -->
+                                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope="" itemtype="">
+                                    <a href="./assets/images/proimg/po.png" data-image="./assets/images/proimg/po.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                                        <img src="./assets/images/proimg/po.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
                                     </a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-
-                <form id="form" class="contact-form">
-                    <div class="form-wrapper">
-                        <label for="name" class="form-label">Name</label>
-                        <div class="input-wrapper">
-                            <input type="text" name="form_name" id="form_name" required placeholder="Enter You're Name" class="input-field">
-                            <ion-icon name="person-outline"></ion-icon>
+                                    <figcaption class="gallery__descr" itemprop="caption description">
+                                        <div class="card__tags d-flex flex-wrap">
+                                            <span class="rounded-tag opposite">Portfolio</span>
+                                        </div>
+                                        <p class="small">Exciting news! A new freelance portfolio website is now live! Designed to be user-friendly and easy to navigate, it showcases the work and passion for web design. Visit the website to review the portfolio and provide any feedback. Thank you for your support! Check it out here: <a href="https://saran.selfmade.one/old/">Link</a></p>
+                                    </figcaption>
+                                </figure>
+                                <!-- Works Gallery Single Item End -->
+                    
+                                <!-- Works Gallery Single Item Start -->
+                                <figure class="col-12 col-md-6 gallery__item grid-item animate-card-2" itemprop="associatedMedia" itemscope="" itemtype="">
+                                    <a href="./assets/images/proimg/rf.png" data-image="./assets/images/proimg/rf.png" class="gallery__link" itemprop="contentUrl" data-size="1400x1400">
+                                        <img src="./assets/images/proimg/rf.png" class="gallery__image" itemprop="thumbnail" alt="Image description">
+                                    </a>
+                                    <figcaption class="gallery__descr opposite" itemprop="caption description">
+                                        <div class="card__tags d-flex flex-wrap">
+                                            <span class="rounded-tag">ReactJS Contact Form</span>
+                                        </div>
+                                        <p class="small">Just created my first React JS contact form! Check out the GitHub repository to see my work: <a href="https://github.com/saran-decoder/React-JS">Link</a></p>
+                                    </figcaption>
+                                </figure>
+                                <!-- Works Gallery Single Item End -->
+                    
+                            </div>
                         </div>
                     </div>
-                    <div class="form-wrapper">
-                        <label for="email" class="form-label">Email</label>
-                        <div class="input-wrapper">
-                            <input type="email" name="email" id="email" required placeholder="Enter You're Email@gmail.com" class="input-field">
-                            <ion-icon name="mail-outline"></ion-icon>
+                    <!-- Content Block - Works Gallery End -->
+
+                </section>
+                <!-- Portfolio Section End -->
+
+                <!-- Resume Section Start -->
+                <section id="qualification" class="inner resume">
+
+                    <!-- Content Block - H2 Section Title Start -->
+                    <div class="content__block block-large">
+                        <p class="h2__subtitle animate-in-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                            </svg>
+                            <span>Qualification</span>
+                        </p>
+                        <h2 class="h2__title animate-in-up">Education and practical experience</h2>
+                    </div>
+                    <!-- Content Block - H2 Section Title End -->
+
+                    <!-- Content Block - Education Start -->
+                    <div class="content__block block-large">
+    
+                        <!-- H3 Block Start -->
+                        <div class="section-h3">
+                            <h3 class="h3__title animate-in-up">My education</h3>
+                        </div>
+                        <!-- H3 Block End -->
+    
+                        <!-- Education Lines Start -->
+                        <div class="container-fluid p-0 resume-lines">
+                            <!-- education single item -->
+                            <div class="row g-0 resume-lines__item animate-in-up">
+                                <div class="col-12 col-md-2">
+                                    <span class="resume-lines__date animate-in-up">2021 - 2024</span>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <h5 class="resume-lines__title animate-in-up">Bachelor of Computer Applications (BCA)</h5>
+                                    <p class="resume-lines__source animate-in-up">Sun Arts & Science College</p>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <p class="small resume-lines__descr animate-in-up">Tiruvannamalai, Tamil Nadu.</p>
+                                </div>
+                            </div>
+                            <!-- education single item -->
+                            <div class="row g-0 resume-lines__item animate-in-up">
+                                <div class="col-12 col-md-2">
+                                    <span class="resume-lines__date animate-in-up">2020 - 2021</span>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <h5 class="resume-lines__title animate-in-up">Computer Science</h5>
+                                    <p class="resume-lines__source animate-in-up">Government Higher Secondary School</p>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <p class="small resume-lines__descr animate-in-up">Tiruvannamalai, Tamil Nadu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Education Lines End -->
+    
+                    </div>
+                    <!-- Content Block - Education End -->
+    
+                    <!-- Content Block - Experience Start -->
+                    <div class="content__block block-large">
+    
+                        <!-- H3 Block Start -->
+                        <div class="section-h3">
+                            <h3 class="h3__title animate-in-up">Work experience</h3>
+                        </div>
+                        <!-- H3 Block End -->
+    
+                        <!-- Experience Lines Start -->
+                        <div class="container-fluid p-0 resume-lines">
+                            <!-- experience single item -->
+                            <div class="row g-0 resume-lines__item animate-in-up">
+                                <div class="col-12 col-md-2">
+                                    <span class="resume-lines__date animate-in-up">2023 - 2024</span>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <h5 class="resume-lines__title animate-in-up">Freelance</h5>
+                                    <p class="resume-lines__source animate-in-up">Worked on various web development project's.</p>
+                                </div>
+                                <div class="col-12 col-md-5">
+                                    <p class="small resume-lines__descr animate-in-up">Tiruvannamalai, Tamil Nadu.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Experience Lines End -->
+    
+                    </div>
+                    <!-- Content Block - Experience End -->
+    
+                    <!-- Content Block - H2 Block Start -->
+                    <div class="content__block section-title">
+                        <p class="h2__subtitle animate-in-up">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                            <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                            C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                            C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                        </svg>
+                        <span>Skills</span>
+                        </p>
+                        <h2 class="h2__title animate-in-up">Using Technologies & Tools</h2>
+                    </div>
+                    <!-- Content Block - H2 Block End -->
+    
+                    <!-- Content Block - Testimonials Slider Start -->
+                    <div class="content__block">
+    
+                        <!-- Testimonials Slider Start -->
+                        <div class="testimonials-slider">
+                            <!-- slider main container -->
+                            <div class="swiper-testimonials">
+                                <!-- additional required wrapper -->
+                                <div class="swiper-wrapper">
+                                    <!-- skills -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-card animate-in-up">
+                                            <div class="tools-cards d-flex justify-content-start flex-wrap">
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/html5.png" alt="HTML5 logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">HTML5</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/css3.png" alt="CSS3 logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">CSS</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/javascript.png" alt="JavaScript logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">JavaScript</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/jquery.png" alt="jQuery logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">jQuery</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/bootstrap.png" alt="Bootstrap logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">Bootstrap</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/react.png" alt="ReactJS logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">ReactJS</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/php.png" alt="PHP logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">PHP</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/mysql.png" alt="MySQL logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">MySQL</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                        <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/api.png" alt="Rest API logo">
+                                                        <h6 class="tools-cards__caption animate-in-up">Rest API</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- tools -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonials-card  animate-in-up">
+                                            <div class="tools-cards d-flex justify-content-start flex-wrap">
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/chromedevtool.png" alt="Chrome DevTool logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">DevTool</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/postman.png" alt="Postman logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">Postman</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/github.png" alt="Github logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">Github</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/git.png" alt="Git logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">Git</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/npm.png" alt="Npm logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">Npm</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/terminal.png" alt="Terminal logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">Terminal</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/vs-code.png" alt="VS Code logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">VS Code</h6>
+                                                    </div>
+                                                </div>
+                                                <!-- tools simgle item -->
+                                                <div class="tools-cards__item d-flex grid-item-s animate-card-5">
+                                                    <div class="tools-cards__card">
+                                                    <img class="tools-cards__icon animate-in-up" src="./assets/images/icons/docker.png" alt="Docker logo">
+                                                    <h6 class="tools-cards__caption animate-in-up">Docker</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- navigation buttons -->
+                                <div class="swiper-button-prev mxd-slider-btn-square mxd-slider-btn-square-prev animate-in-up">
+                                    <a class="btn btn-square btn-square-s btn-outline slide-left">
+                                        <i class="ph-bold ph-caret-left"></i>
+                                    </a>
+                                </div>
+                                <div class="swiper-button-next mxd-slider-btn-square mxd-slider-btn-square-next animate-in-up">
+                                    <a class="btn btn-square btn-square-s btn-outline slide-right">
+                                        <i class="ph-bold ph-caret-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonials Slider End -->
+    
+                    </div>
+                    <!-- Content Block - Testimonials Slider End -->
+
+
+                </section>
+                <!-- Resume Section End -->
+
+                <!-- Contact Section Start -->
+                <section id="contact" class="inner contact">
+
+                    <!-- Content Block - H2 Section Title Start -->
+                    <div class="content__block section-title">
+                        <p class="h2__subtitle  animate-in-up">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="13px" height="13px" viewBox="0 0 13 13" fill="currentColor">
+                                <path fill="currentColor" d="M5.6,12.6c-0.5-0.8-0.7-2.4-1.7-3.5c-1-1-2.7-1.2-3.5-1.7C-0.1,7-0.1,6,0.4,5.6c0.8-0.5,2.3-0.6,3.5-1.8
+                                C5,2.8,5.1,1.2,5.6,0.4C6-0.1,7-0.1,7.4,0.4c0.5,0.8,0.7,2.4,1.8,3.5c1.2,1.2,2.6,1.2,3.5,1.7c0.6,0.4,0.6,1.4,0,1.7
+                                C11.8,7.9,10.2,8,9.1,9.1c-1,1-1.2,2.7-1.7,3.5C7,13.1,6,13.1,5.6,12.6z"></path>
+                            </svg>
+                            <span>Contact</span>
+                        </p>
+                        <h2 class="h2__title  animate-in-up">Let's make something awesome together!</h2>
+                    </div>
+                    <!-- Content Block - H2 Section Title End -->
+
+                    <!-- Content Block - Contact Form Start -->
+                    <div class="content__block grid-block block-grid-large">
+                        <div class="form-container">
+
+                            <!-- Contact Form Start -->
+                            <div class="cards__card py-4">
+                                <form class="form contact-form" id="form" autocomplete="off">
+                                    <div class="container-fluid p-0">
+                                        <div class="row gx-0">
+                                            <div class="col-12 col-md-6 form__item animate-in-up">
+                                                <input type="text" name="form_name" id="form_name" placeholder="Enter You're Name*" required="" value="">
+                                            </div>
+                                            <div class="col-12 col-md-6 form__item animate-in-up">
+                                                <input type="text" name="company" id="company" placeholder="Company Name?" value="">
+                                            </div>
+                                            <div class="col-12 col-md-6 form__item animate-in-up">
+                                                <input type="email" name="email" id="email" placeholder="Enter You're email@gmail.com*" required="" value="">
+                                            </div>
+                                            <div class="col-12 col-md-6 form__item animate-in-up">
+                                                <input type="tel" name="number" id="number" placeholder="Enter You're Number*" required="" value="">
+                                            </div>
+                                            <div class="col-12 form__item animate-in-up">
+                                                <textarea name="message" id="message" placeholder="Write Your're Message*" required=""></textarea>
+                                            </div>
+                                            <div class="col-12 form__item animate-in-up">
+                                                <button id="button" class="btn btn-default btn-hover btn-hover-accent" type="submit">
+                                                    <span class="btn-caption" id="value">Send Message</span>
+                                                    <i class="ph-bold ph-paper-plane-tilt"></i>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- Contact Form End -->
+
+                            <!-- Send Mail JS Script -->
+                            <script>
+                                const btn = document.getElementById('button');
+                                const value = document.getElementById('value');
+
+                                document.getElementById('form').addEventListener('submit', function(event) {
+                                    event.preventDefault();
+
+                                    value.innerHTML = 'Sending...';
+
+                                    const serviceID = 'default_service';
+                                    const templateID = 'template_multi';
+
+                                    emailjs.sendForm(serviceID, templateID, this)
+                                    .then(() => {
+                                        btn.value = location.reload();
+                                        alert('Email Send Successfully!');
+                                    }, (err) => {
+                                        btn.value = 'Send Email';
+                                        alert(JSON.stringify(err));
+                                    });
+                                });
+                            </script>
+
                         </div>
                     </div>
-                    <div class="form-wrapper">
-                        <label for="phone" class="form-label">Phone</label>
-                        <div class="input-wrapper">
-                            <input type="number" name="number" id="number" required placeholder="Enter You're Number" class="input-field">
-                            <ion-icon name="phone-portrait-outline"></ion-icon>
+                    <!-- Content Block - Contact Form End -->
+
+                    <!-- Content Block - Contact Data Start -->
+                    <div class="content__block">
+                        <div class="contact-lines__item pb-0">
+                            <!-- data item -->
+                            <div class="col-12 col-md-4 contact-lines__data">
+                                <p class="contact-lines__text animate-in-up">
+                                    <a class="text-link-bold" href="#" target="_blank">&copy; 2024 All Rights Reserved</a>
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-wrapper">
-                        <label for="message" class="form-label">Message</label>
-                        <div class="input-wrapper">
-                            <textarea name="message" id="message" required placeholder="Write Your're Message..." class="input-field"></textarea>
-                            <ion-icon name="chatbox-ellipses-outline"></ion-icon>
-                        </div>
-                    </div>
-                    <input type="submit" id="button" value="Send" class="btn btn-primary">
-                </form>
+                    <!-- Content Block - Contact Data End -->
 
-                <!-- Send Mail JS Printing PHP Script -->
-                <script>
-                    const btn = document.getElementById('button');
+                </section>
+                <!-- Contact Section End -->
 
-                    document.getElementById('form').addEventListener('submit', function(event) {
-                        event.preventDefault();
-
-                        btn.value = 'Sending...';
-
-                        const serviceID = 'default_service';
-                        const templateID = 'template_multi';
-
-                        emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            btn.value = location.reload();
-                            alert('Email Send Successfully!');
-                        }, (err) => {
-                            btn.value = 'Send Email';
-                            alert(JSON.stringify(err));
-                        });
-                    });
-                </script>
-
-            </section>
-
-        </main>
-
-        <!-- F O O T E R -->
-        <footer class="footer">
-            <div class="container">
-                <p class="h1 logo"><a href="#">SARAN</a></p>
-                <p class="copyright">&copy; 2024 <a href="#">My Portfolio</a> All Rights Reserved</p>
             </div>
-        </footer>
+        </div>
+        <!-- Page Content End -->
 
-        <!-- GO TO TOP -->
-        <a href="#top" class="go-top" data-go-top title="Go to Top">
-            <ion-icon name="arrow-up"></ion-icon>
-        </a>
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-        
-        <!-- CUSTOM JS LINK -->
-        <script src="./assets/js/script.js"></script>
+            <!-- Background of PhotoSwipe.
+            It's a separate element, as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
 
-        <!-- IONICON LINK -->
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
 
+                <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
+                <!-- don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
+
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
+
+                    <div class="pswp__top-bar">
+
+                        <!--  Controls are self-explanatory. Order can be changed. -->
+                        <div class="pswp__counter"></div>
+
+                        <button class="pswp__button pswp__button--close link-s" title="Close (Esc)"></button>
+
+                        <button class="pswp__button pswp__button--fs link-s" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom link-s" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader-active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                                <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left link-s" title="Previous (arrow left)"></button>
+
+                    <button class="pswp__button pswp__button--arrow--right link-s" title="Next (arrow right)"></button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Load Scripts Start -->
+        <script src="./assets/js/libs.min.js"></script>
+        <script src="./assets/js/app.js"></script>
+        <script src="./assets/js/gallery-init.js"></script>
+        <!-- Load Scripts End -->
+    
     </body>
 </html>
